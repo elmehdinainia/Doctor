@@ -2270,6 +2270,7 @@ nav.navbar.bootsnav {
 .navbar-brand>img {
   display: initial;
   height: auto;
+  margin-top: -11px;
 }
 
 .attr-nav > ul > li {
@@ -2712,6 +2713,7 @@ nav.bootsnav.navbar-full .navbar-toggle:hover span {
   nav.navbar.bootsnav.navbar-fixed.nav-box.no-background {
     left: 0;
     top: 0;
+    height: 105px;
     width: 100%;
   }
 }
