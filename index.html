@@ -44,6 +44,50 @@
 </head>
 
 <body>
+    <style>
+
+                    #whatsapp-widget {
+                    position: fixed;
+                    bottom: 30px;
+                    right: 30px;
+                    z-index: 9999;
+                    }
+        
+                    #whatsapp-widget img {
+                    transition: transform 0.3s ease;
+                    animation: bounce 1s infinite;
+        
+                    width: 50px;
+                    transform: scale(1.1);
+        
+                    }
+                    @keyframes bounce {
+                     0% {
+                    transform: translateY(0);
+                     }
+                     50% {
+                  transform: translateY(-20px);
+                    }
+                   100% {
+                    transform: translateY(0);
+                   }
+                }
+             
+
+
+
+
+
+
+                   
+                   
+                
+        
+        
+        
+        
+               </style>
+        
 
     <!-- Preloader Start -->
     <div class="se-pre-con"></div>
@@ -112,10 +156,7 @@
                             <a href="/services.html" class="dropdown-toggle active"  >Service</a>
                         
                         </li>
-                        <li>
-                            <a href="/doctor-details.html" class="dropdown-toggle active"  >Service-Details</a>
-                          
-                        </li>
+
                    
                         <li>
                             <a href="/gallery.html" class="dropdown-toggle active" >Gallery</a>
@@ -127,16 +168,33 @@
                         <li>
                             <a href="contact.html" class="dropdown-toggle" >contact</a>
                         </li>
+                        <li style="display: flex; align-items: center; justify-content: center;">
+                            <div style="margin-top: 6px; font-size: 17px;">
+                                <i class="fa fa-globe"></i>
+                            </div>
+                            <div class="has-dropdown">
+                                <select id="language-select">
+                                    <option value="english">
+                                        Anglais
+                                    </option>
+                                    <option value="french">
+                                        Français
+                                    </option>
+                                </select>
+                            </div>
+                        </li>
+                     
                     </ul>
                 </div><!-- /.navbar-collapse -->
             </div>
+   
 
             <!-- Start Side Menu -->
             <div class="side">
                 <a href="#" class="close-side"><i class="fa fa-times"></i></a>
                 <div class="widget">
                     <h4 class="title">About Us</h4>
-                    <p>
+                    <p id="arrived">
                         Arrived compass prepare an on as. Reasonable particular on my it in sympathize. Size now easy eat hand how. Unwilling he departure elsewhere dejection at. Heart large seems may purse means few blind.
                     </p>
                 </div>
@@ -177,7 +235,7 @@
                             <div class="content double-items">
 
                                 <div class="col-md-7 col-sm-6">
-                                    <h1 data-animation="animated slideInRight">Best care for your Good health</h1>
+                                    <h1 data-animation="animated slideInRight" class="best">Best care for your Good health</h1>
                                     <p data-animation="animated slideInUp">
                                         The ourselves suffering the sincerity. Inhabit her manners adapted age certain. Debating offended at branched striking be subjects.
                                     </p>
@@ -185,7 +243,7 @@
                                 </div>
 
                                 <div class="col-md-5 col-sm-6 thumb">
-                                    <img src="assets/img-Doctor/doctor-10.jpg" alt="Thumb">
+                                    <img src="assets/img-Doctor/Rheumatology physiotherapy2.png" alt="Thumb">
                                 </div>
 
                             </div>
@@ -195,60 +253,61 @@
             </div>
         </div>
     </div>
+
     <!-- End Banner -->
 
     <!-- Start Services
     ============================================= -->
-    <div class="services-area inc-icon less-info default-padding bottom-less">
+    <!-- <div class="services-area inc-icon less-info default-padding bottom-less">
         <div class="container">
             <div class="row">
                 <div class="services-items text-center">
                     <!-- Single Item -->
-                    <div class="col-md-3 col-sm-6 equal-height">
+                    <!-- <div class="col-md-3 col-sm-6 equal-height">
                         <div class="item">
                             <a href="#">
                                 <i class="flaticon-doctor-1"></i>
                                 <h4>Advanced Care</h4>
                             </a>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- End Single Item -->
                     <!-- Single Item -->
-                    <div class="col-md-3 col-sm-6 equal-height">
+                    <!-- <div class="col-md-3 col-sm-6 equal-height">
                         <div class="item">
                             <a href="#">
                                 <i class="flaticon-medicine"></i>
                                 <h4>Respite Care</h4>
                             </a>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- End Single Item -->
                     <!-- Single Item -->
-                    <div class="col-md-3 col-sm-6 equal-height">
+                    <!-- <div class="col-md-3 col-sm-6 equal-height">
                         <div class="item">
                             <a href="#">
                                 <i class="flaticon-checkup"></i>
                                 <h4>Daily Care</h4>
                             </a>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- End Single Item -->
                     <!-- Single Item -->
-                    <div class="col-md-3 col-sm-6 equal-height">
+                    <!-- <div class="col-md-3 col-sm-6 equal-height">
                         <div class="item">
                             <a href="#">
                                 <i class="flaticon-neurology"></i>
                                 <h4>Neuorology Care</h4>
                             </a>
                         </div>
-                    </div>
+                    </div> -->
                     <!-- End Single Item -->
-                </div>  
-            </div>
-        </div>
-    </div>
+                <!-- </div>   -->
+            <!-- </div> -->
+        <!-- </div> -->
+    <!-- </div> --> 
     <!-- End Services -->
-    <div class="chose-us-area ">
+    <div class="chose-us-area  " style="margin-top: 50px;">
         <div class="container-full">
             <div class="row">
                 <div class="col-md-6 thumb bg-cover" style="background-image: url(assets/img-Doctor/doctor-21.jpg);"></div>
@@ -281,52 +340,44 @@
     <!-- Start Top Entry
     ============================================= -->
     <div class="top-entry-area default-padding-bottom border-less text-center mt-5" style="margin-top:56px">
-        <div class="container">
+        <div class="container" style="max-width: 617px">
             <div class="row">
                 <div class="item-box">
                     <!-- Single Item -->
-                    <div class="col-md-4 single-item">
-                        <div class="item">
-                            <i class="flaticon-ambulance-1"></i>
-                            <h4>Emergency Case</h4>
-                            <p>
-                                Moment he at on wonder at season little. Six garden result summer set family esteem nay estate. End admiration mrs unreserved
-                            </p>
-                            <a class="btn btn-theme border btn-sm" href="#">Read More</a>
-                        </div>
-                    </div>
+                    <!-- <div class="col-md-4 single-item">
+                   
+                    </div> -->
                     <!-- End Single Item -->
                     <!-- Single Item -->
-                    <div class="col-md-4 single-item">
+                    <div class="single-item" style="background-image: url('/assets/img-Doctor/doctor-28.jpg'); background-size: cover; border-radius: 12px;">
                         <div class="item">
                             <i class="flaticon-24-hours"></i>
-                            <h4>Opening Hours</h4>
+                            <h4 style="color: rgb(5, 5, 5);">Opening Hours</h4>
                             
                             <ul>
-                                <li> <span> Mon - Tues :  </span>
-                                  <div class="pull-right"> 6.00 am - 10.00 pm </div>
+                                <li> <span  style="color: rgb(5, 5, 5);"> Mon - Tues :  </span>
+                                  <div class="pull-right "  style="color:#58bc01"> 6.00 am - 10.00 pm </div>
                                 </li>
-                                <li> <span> Wednes - Thurs :</span>
-                                  <div class="pull-right"> 8.00 am - 6.00 pm </div>
+                                <li> <span style="color: rgb(5, 5, 5);"> Wednes - Thurs :</span>
+                                  <div class="pull-right" style="color:#58bc01"> 8.00 am - 6.00 pm </div>
                                 </li>
-                                <li> <span> Sun : </span>
-                                  <div class="pull-right closed"> Closed </div>
+                                <li> <span style="color: rgb(5, 5, 5);"> Sun : </span>
+                                  <button class="pull-right closed" style="color: rgb(5, 5, 5); 
+                                                                    padding: 4px 25px;
+                                                                    background-color: chartreuse;
+                                                                    border-radius: 66px;
+                                                                    border: none;padding:10px"> Closed </button>
                                 </li>
                             </ul>
                         </div>
                     </div>
                     <!-- End Single Item -->
                     <!-- Single Item -->
-                    <div class="col-md-4 single-item">
+                    <!-- <div class="col-md-4 single-item">
                         <div class="item">
-                            <i class="flaticon-lung-cancer"></i>
-                            <h4>Cancer Care</h4>
-                            <p>
-                                Moment he at on wonder at season little. Six garden result summer set family esteem nay estate. End admiration mrs unreserved
-                            </p>
-                            <a class="btn btn-theme border btn-sm" href="#">Read More</a>
+                            
                         </div>
-                    </div>
+                    </div> -->
                     <!-- End Single Item -->
                 </div>
             </div>
@@ -402,20 +453,13 @@
                     <div class="col-md-3 col-sm-6 equal-height">
                         <div class="item">
                             <div class="thumb">
-                                <a href="#"><img src="/assets/img-Doctor/service1.png" alt="Thumb"></a>
+                                <a href="/services-details.html"><img src="/assets/img-Doctor/service1.png" alt="Thumb"></a>
                             </div>
                             <div class="info">
                                 <h4>
-                                    <a href="#">Body Surgery</a>
+                                    <a href="#">rheumatology</a>
                                 </h4>
-                                <ul>
-                                    <li>
-                                        Total seats <span>136</span>
-                                    </li>
-                                    <li>
-                                        Doctors <span>12</span>
-                                    </li>
-                                </ul>
+                             
                             </div>
                         </div>
                     </div>
@@ -424,20 +468,13 @@
                     <div class="col-md-3 col-sm-6 equal-height">
                         <div class="item">
                             <div class="thumb">
-                                <a href="#"><img src="/assets/img-Doctor/service5.png" alt="Thumb"></a>
+                                <a href="/services-details.html"><img src="/assets/img-Doctor/service5.png" alt="Thumb"></a>
                             </div>
                             <div class="info">
                                 <h4>
-                                    <a href="#">Dental Care</a>
+                                    <a href="#">kinésithérapeute oro-maxillo-faciale</a>
                                 </h4>
-                                <ul>
-                                    <li>
-                                        Total seats <span>80</span>
-                                    </li>
-                                    <li>
-                                        Doctors <span>16</span>
-                                    </li>
-                                </ul>
+                          
                             </div>
                         </div>
                     </div>
@@ -446,20 +483,13 @@
                     <div class="col-md-3 col-sm-6 equal-height">
                         <div class="item">
                             <div class="thumb">
-                                <a href="#"><img src="/assets/img-Doctor/service2.png" alt="Thumb"></a>
+                                <a href="/services-details.html"><img src="/assets/img-Doctor/service2.png" alt="Thumb"></a>
                             </div>
                             <div class="info">
                                 <h4>
-                                    <a href="#">Eye Care</a>
+                                    <a href="#">kinésithérapie orthopédique</a>
                                 </h4>
-                                <ul>
-                                    <li>
-                                        Total seats <span>145</span>
-                                    </li>
-                                    <li>
-                                        Doctors <span>19</span>
-                                    </li>
-                                </ul>
+                         
                             </div>
                         </div>
                     </div>
@@ -468,19 +498,14 @@
                     <div class="col-md-3 col-sm-6 equal-height">
                         <div class="item">
                             <div class="thumb">
-                                <a href="#"><img src="/assets/img-Doctor/servise4.png" alt="Thumb"></a>
+                                <a href="/services-details.html"><img src="/assets/img-Doctor/servise4.png" alt="Thumb"></a>
                             </div>
                             <div class="info">
                                 <h4>
-                                    <a href="#">Blood Cancer</a>
+                                    <a href="#">aromathérapie à Lasne</a>
                                 </h4>
                                 <ul>
-                                    <li>
-                                        Total seats <span>256</span>
-                                    </li>
-                                    <li>
-                                        Doctors <span>25</span>
-                                    </li>
+                                
                                 </ul>
                             </div>
                         </div>
@@ -763,6 +788,11 @@
             </div>
         </div>
     </div>
+    <div id="whatsapp-widget">
+        <a href="https://api.whatsapp.com/send?phone=YOUR_PHONE_NUMBER" target="_blank">
+          <img src="/assets/img-Doctor/waahtsap2.png" alt="WhatsApp Icon">
+        </a>
+      </div>
     <!-- End Contact -->
     <footer class="bg-dark text-light">
         <div class="container">
@@ -770,7 +800,7 @@
                 <div class="f-items default-padding">
 
                     <!-- Single Item -->
-                    <div class="col-md-3 col-sm-6 equal-height item">
+                    <div class="col-md-4 col-sm-6 equal-height item">
                         <div class="f-item">
                             <h4>About</h4>
                             <p>
@@ -794,7 +824,7 @@
                     </div>
                     <!-- End Single Item -->
                     <!-- Single Item -->
-                    <div class="col-md-3 col-sm-6 equal-height item">
+                    <div class="col-md-4 col-sm-6 equal-height item">
                         <div class="f-item link">
                             <h4>Our Depeartment</h4>
                             <ul>
@@ -824,7 +854,7 @@
                     </div>
                     <!-- End Single Item -->
                     <!-- Single Item -->
-                    <div class="col-md-3 col-sm-6 equal-height item">
+                    <div class="col-md-4 col-sm-6 equal-height item">
                         <div class="f-item twitter-widget">
                             <h4>Latest tweets</h4>
                             <div class="twitter-item">
@@ -877,8 +907,26 @@
                 </div>
             </div>
         </div>
+
         <!-- End Footer Bottom -->
     </footer>
+    <script>
+            document.getElementById('language-select').addEventListener('change', function() {
+                    let selectedValue = this.value;
+                    let aboutUsText = document.getElementsByClassName('best'); // Corrected ID
+                    
+                    console.log(aboutUsText);
+
+                    if (selectedValue === 'french') {
+                        aboutUsText.textContent = "Les meilleurs soins pour votre bonne santé.";
+                    } else {
+                        aboutUsText.textContent = "Best care for your good health"; // Corrected capitalization
+                    }
+                });
+  // Your code here
+                   
+
+    </script>
     <!-- End Footer -->
 
     <!-- jQuery Frameworks
@@ -899,6 +947,7 @@
     <script src="assets/js/jquery.nice-select.min.js"></script>
     <script src="assets/js/bootsnav.js"></script>
     <script src="assets/js/main.js"></script>
+
 
 </body>
 

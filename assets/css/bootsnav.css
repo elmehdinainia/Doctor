@@ -340,8 +340,11 @@ nav.navbar.attr-border .attr-nav::before {
   width: 1px;
 }
 
-.bootsnav .side .widget.social li.facebook a {
+.bootsnav  .side .widget.social li.facebook a {
   background: #3b5998 none repeat scroll 0 0;
+}
+.bootsnav  .side .widget.social li.whatsapp a {
+  background: #07f582 none repeat scroll 0 0;
 }
 
 .bootsnav .side .widget.social li.twitter a {

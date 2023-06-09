@@ -1661,8 +1661,8 @@ body,
 }
 
 .top-entry-area .item {
-  padding: 80px 30px;
-  transition: all 0.35s ease-in-out;
+  padding: 90px 38px;
+    transition: all 0.35s ease-in-out;
   -webkit-transition: all 0.35s ease-in-out;
   -moz-transition: all 0.35s ease-in-out;
   -ms-transition: all 0.35s ease-in-out;
@@ -3007,9 +3007,11 @@ body,
 
 /* Nice Select CSS */
 .nice-select {
+  margin-top: 19px;
+  border-radius: 169px;
+  background-color: #eefafa;
+  border: none;
   -webkit-tap-highlight-color: transparent;
-  background-color: #fff;
-  border: solid 1px #e8e8e8;
   box-sizing: border-box;
   clear: both;
   cursor: pointer;
